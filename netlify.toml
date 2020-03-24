@@ -64,19 +64,19 @@
 # Redirect domain aliases to primary domain
 [[redirects]]
   from = "https://kilbot.com.au/*"
-  to = "https://kilbot.com/:splat"
+  to = "https://kilbot.com/"
   status = 301
   force = true
 
 [[redirects]]
   from = "https://www.kilbot.com.au/*"
-  to = "https://kilbot.com/:splat"
+  to = "https://kilbot.com/"
   status = 301
   force = true
 
 [[redirects]]
   from = "https://sleepy-ritchie-cbb5c7.netlify.com/*"
-  to = "https://kilbot.com/:splat"
+  to = "https://kilbot.com/"
   status = 301
   force = true
 
