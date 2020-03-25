@@ -1,0 +1,97 @@
+{
+  "basics": {
+    "name": "Paul Kilmurray",
+    "label": "JavaScript Developer",
+    "picture": "https://www.gravatar.com/avatar/d9036ec65e36c03b9fc9d4e13e108c96?s=640",
+    "email": "paul@kilbot.com",
+    "website": "https://kilbot.com",
+    "summary": "",
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "kilbot",
+        "url": "https://github.com/kilbot"
+      },
+      {
+        "network": "Twitter",
+        "username": "kilbot",
+        "url": "https://twitter.com/kilbot"
+      },
+      {
+        "network": "Keybase",
+        "username": "kilbot",
+        "url": "https://keybase.io/kilbot"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "The Kilbot Factory",
+      "position": "Lead UI Designer & Developer",
+      "website": "https://kilbot.com",
+      "startDate": "2003-10-01",
+      "endDate": "current",
+      "summary": "Web Development and Hosting"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Self-taught",
+      "area": "Web Development",
+      "studyType": "Autodidactic",
+      "startDate": "1998-01-01",
+      "endDate": "current"
+    },
+    {
+      "institution": "University of Western Australia",
+      "area": "Physics & Mathematics",
+      "studyType": "Bachelor of Science",
+      "startDate": "1996-01-01",
+      "endDate": "2000-12-31"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PHP",
+        "Node.js",
+        "npm ecosystem",
+        "SASS/SCSS",
+        "React",
+        "React-Native",
+        "Styled Components",
+        "WordPress",
+        "WooCommerce"
+      ]
+    },
+    {
+      "name": "General Software Development",
+      "level": "Master",
+      "keywords": ["Git", "GitHub", "Bash", "UNIX"]
+    },
+    {
+      "name": "DevOps",
+      "level": "Intermediate",
+      "keywords": ["Docker", "Kubernetes", "Cloudflare", "NGINX", "Apache"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Basic speaker"
+    }
+  ],
+  "meta": {
+    "canonical": "https://kilbot.com/resume",
+    "lastModified": ""
+  }
+}
