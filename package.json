@@ -18,7 +18,9 @@
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "start": "npm run dev",
     "test": "npm run type-check && npm run lint",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "engines": {
     "node": ">=8.0.0"
@@ -52,7 +54,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "snyk": "^1.303.2"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.10",
@@ -69,5 +72,6 @@
     "gh-pages": "^2.2.0",
     "prettier": "^2.0.2",
     "rimraf": "^3.0.2"
-  }
+  },
+  "snyk": true
 }
