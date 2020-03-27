@@ -1,6 +1,7 @@
-'use strict'
-
 const path = require('path')
+const fs = require('fs')
+const yaml = require('js-yaml')
+const reposYaml = yaml.load(fs.readFileSync('./src/content/repos.yml', 'utf8'))
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions

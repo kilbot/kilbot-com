@@ -42,17 +42,13 @@ module.exports = {
         ]
       }
     },
-    'gatsby-transformer-json',
-    {
-      resolve: 'gatsby-plugin-canonical-urls',
-      options: {
-        siteUrl: 'https://gatsby-starter-typescript-plus.netlify.com'
-      }
-    },
     'gatsby-plugin-emotion',
-    'gatsby-plugin-typescript',
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
+    'gatsby-plugin-theme-ui',
+    'gatsby-plugin-typescript',
+    'gatsby-transformer-json',
     'gatsby-transformer-sharp',
-    'gatsby-plugin-react-helmet'
+    'gatsby-transformer-yaml'
   ]
 }
