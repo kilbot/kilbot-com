@@ -1,13 +1,17 @@
+require('dotenv').config()
+const resume = require('./src/content/resume.json')
+const { name, website, email } = resume.basics
+
 module.exports = {
   siteMetadata: {
-    title: 'kilbot.com',
+    title: name,
     description: 'Digital portfolio and playground for Paul Kilmurray.',
     keywords: 'javascript',
-    siteUrl: 'https://kilbot.com',
+    siteUrl: website,
     author: {
-      name: 'Paul Kilmurray',
-      url: 'https://kilbot.com',
-      email: 'paul@kilbot.com'
+      name: name,
+      url: website,
+      email: email
     }
   },
   plugins: [
@@ -16,6 +20,13 @@ module.exports = {
       options: {
         name: 'content',
         path: `${__dirname}/src/content`
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: `${__dirname}/src/images`
       }
     },
     {
@@ -40,6 +51,45 @@ module.exports = {
             }
           }
         ]
+      }
+    },
+    {
+      resolve: `gatsby-source-github-api`,
+      options: {
+        token: process.env.GITHUB_API_TOKEN,
+        graphQLQuery: `query Repository ($owner: String!, $name: String!) {
+          repository(name: $name, owner: $owner){
+            owner {
+              login
+              avatarUrl(size: 150)
+            }
+            name
+            description
+          }
+        }`,
+        variables: { owner: 'kilbot', name: 'kilbot-com' }
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: name.toLowerCase(),
+        short_name: name.toLowerCase(),
+        start_url: '/',
+        background_color: '#e7eef4',
+        theme_color: '#e7eef4',
+        icon: 'src/images/favicon.png',
+        display: 'standalone',
+        cache_busting_mode: 'name',
+        theme_color_in_head: false // dynamically set in ThemeSwitch
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-use-dark-mode',
+      options: {
+        classNameDark: 'dark',
+        classNameLight: 'light',
+        minify: true
       }
     },
     'gatsby-plugin-emotion',

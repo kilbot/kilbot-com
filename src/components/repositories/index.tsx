@@ -1,7 +1,11 @@
 import React, { memo } from 'react'
-import Repository from './repository'
+import Repository, { RepositoryProps } from './repository'
 
-function Repositories({ repos }) {
+interface Props {
+  repos?: [RepositoryProps]
+}
+
+function Repositories({ repos }: Props): React.FC {
   if (!repos) return null
 
   return (
