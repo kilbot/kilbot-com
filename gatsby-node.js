@@ -97,3 +97,12 @@ exports.onCreatePage = async ({ page, actions }) => {
     createPage(page)
   }
 }
+
+exports.onPreBootstrap = async () => {
+  try {
+    // const repos = await getGithubRepos(reposYaml)
+    console.log(reposYaml)
+  } catch (error) {
+    throw Error(error.message)
+  }
+}

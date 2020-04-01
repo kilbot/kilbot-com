@@ -12,6 +12,8 @@ const query = graphql`
     githubData {
       data {
         repository {
+          name
+          description
           owner {
             login
             avatarUrl
@@ -23,10 +25,8 @@ const query = graphql`
 `
 
 function Home({ data, pageContext }) {
-  console.log(data)
-  console.log(pageContext)
   const contentJson = useStaticQuery(query)
-  console.log(contentJson)
+  const repos = [contentJson.githubData.data.repository]
 
   return (
     <IndexLayout>
@@ -35,7 +35,7 @@ function Home({ data, pageContext }) {
           <h1>Hello human</h1>
           <p>A new site is coming</p>
         </Container>
-        <Repositories repos={pageContext.repos} />
+        <Repositories repos={repos} />
       </Page>
     </IndexLayout>
   )

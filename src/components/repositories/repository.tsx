@@ -136,5 +136,10 @@ interface Props {
 }
 
 export default function Repository({ repo }: Props) {
-  return <Card>{repo.name}</Card>
+  return (
+    <Card>
+      <p>{repo.name}</p>
+      <p>{repo.description}</p>
+    </Card>
+  )
 }
