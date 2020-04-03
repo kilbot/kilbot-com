@@ -54,7 +54,7 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-source-github-api`,
+      resolve: 'gatsby-source-github-api',
       options: {
         token: process.env.GITHUB_API_TOKEN,
         graphQLQuery: `query Repository ($owner: String!, $name: String!) {
@@ -68,6 +68,12 @@ module.exports = {
           }
         }`,
         variables: { owner: 'kilbot', name: 'kilbot-com' }
+      }
+    },
+    {
+      resolve: 'gatsby-source-datocms',
+      options: {
+        apiToken: process.env.DATO_API_TOKEN
       }
     },
     {

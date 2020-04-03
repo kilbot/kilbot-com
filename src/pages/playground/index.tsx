@@ -13,6 +13,9 @@ export default function Playground() {
           <li>
             <Link to="/playground/app/2">App</Link>
           </li>
+          <li>
+            <Link to="/playground/markdown">Markdown</Link>
+          </li>
         </ul>
       </header>
     </>
