@@ -1,0 +1,10 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-450202:
+    - gatsby-source-datocms > datocms-client > contentful-management > lodash:
+        patched: '2020-04-03T12:32:14.260Z'
+    - gatsby-source-datocms > request-promise-native > request-promise-core > lodash:
+        patched: '2020-04-03T12:32:14.260Z'
