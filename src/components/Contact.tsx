@@ -2,6 +2,25 @@ import React from 'react';
 import { Mail, MapPin, Github } from 'lucide-react';
 
 export function Contact() {
+  const [isSubmitted, setIsSubmitted] = React.useState(false);
+
+  if (isSubmitted) {
+    return (
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold mb-6">Message Sent Successfully!</h2>
+          <p className="mb-8">Thank you for your message. I'll get back to you soon.</p>
+          <button 
+            onClick={() => setIsSubmitted(false)}
+            className="bg-emerald-500 text-white py-2 px-4 rounded-md hover:bg-emerald-600 transition-colors"
+          >
+            Send Another Message
+          </button>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-6">
@@ -40,7 +59,18 @@ export function Contact() {
             <form 
               name="contact" 
               method="POST" 
-              data-netlify="true" 
+              data-netlify="true"
+              onSubmit={(e) => {
+                e.preventDefault();
+                const formData = new FormData(e.currentTarget);
+                fetch("/", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                  body: new URLSearchParams(formData as any).toString(),
+                })
+                  .then(() => setIsSubmitted(true))
+                  .catch((error) => alert("Error: " + error));
+              }}
               netlify-honeypot="bot-field" 
               className="space-y-4"
             >

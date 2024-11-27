@@ -1,0 +1,57 @@
+@ -1,56 +0,0 @@
+==================================================================
+https://keybase.io/kilbot
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://kilbot.com
+  * I am kilbot (https://keybase.io/kilbot) on keybase.
+  * I have a public key ASDfUhifa7YeloJAewiQxQS5_qB1BHOdL8ipzmgHcwE3ZAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120699c03dafc51e39a2dc189d30679c2fa2321ec59f47dba11bf0630bb5db517020a",
+      "host": "keybase.io",
+      "kid": "0120df52189f6bb61e9682407b0890c504b9fea07504739d2fc8a9ce6807730137640a",
+      "uid": "458b8f7e51d1295fdefe54fa9a44be19",
+      "username": "kilbot"
+    },
+    "merkle_root": {
+      "ctime": 1585140989,
+      "hash": "e9f8c23fc9e3c9c124661839f43ae6d63121a2c7231267ec5523af28b51e2128320f4318fcd863873796a1f0cb93ed7e426435c36495e39323106b0a620b0921",
+      "hash_meta": "162a77d182de060c40ee3b596035b3ddfbbcdacb699eec5e5ac843a1b55a37dc",
+      "seqno": 15596542
+    },
+    "service": {
+      "entropy": "az37RIMm9BfPCaBJxI4Vrj3V",
+      "hostname": "kilbot.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.3.0"
+  },
+  "ctime": 1585140998,
+  "expire_in": 504576000,
+  "prev": "34c4ab21ecaab920d0d41297379de4fb117a22aebc96d7f3381c8b55c9ec724a",
+  "seqno": 15,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg31IYn2u2HpaCQHsIkMUEuf6gdQRznS/Iqc5oB3MBN2QKp3BheWxvYWTESpcCD8QgNMSrIeyquSDQ1BKXN53k+xF6Iq68ltfzOByLVcnsckrEIOPFZqRtUO8e95zir0TVwq3WDxI3UhIl3VfFcSfgLdXvAgHCo3NpZ8RAbnEKUtcHafu6lMBucs8SqSw3XKSEn+dN6M4XEbl0IBBvT8aMrJLybj6lepKF74ZOUMBWyqhF8ndxWWGCrs18B6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIDLWvzLmucpcJn+6azJ3nF095QwotXpea85OYQd9e/eBo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kilbot
+
+==================================================================
